@@ -1,0 +1,98 @@
+baseURL: "https://biejingaoguai.github.io/"
+title: "Juao's Blog"
+theme: PaperMod
+pagination:
+  pagerSize: 10
+defaultContentLanguage: en
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Juao's Blog"
+  description: "Personal blog of Juao Fan — Data Science, NLP, Deep Learning, and more."
+  keywords: [Blog, Data Science, NLP, Deep Learning, Machine Learning, AI]
+  author: "Juao Fan"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Hi, I'm Juao Fan 👋"
+    Content: >
+      Welcome to my blog! I'm an undergraduate Data Science student at BNU-HKBU United International College.
+      My research interests include **Natural Language Processing**, **Deep Learning**, **Healthcare AI**, and **Music Generation**.
+
+      I write about my research, learning notes, and thoughts on AI/ML topics.
+
+  socialIcons:
+    - name: email
+      url: "mailto:biejingaoguai@gmail.com"
+    - name: github
+      url: "https://github.com/biejingaoguai"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  assets:
+    disableHLJS: true
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: false
+    style: monokai
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
